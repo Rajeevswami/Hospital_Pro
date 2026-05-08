@@ -1,0 +1,52 @@
+# Core
+Django==5.1
+djangorestframework==3.15.2
+django-filter==24.3
+
+# Auth
+djangorestframework-simplejwt==5.3.1
+django-allauth==65.0.2
+dj-rest-auth==7.0.0
+PyOTP==2.9.0
+qrcode==8.0
+
+# Database
+psycopg[binary]==3.2.3
+django-tenants==3.7.0
+
+# Cache & Async
+redis==5.2.1
+django-redis==5.4.0
+celery==5.4.0
+django-celery-beat==2.7.0
+channels==4.2.0
+channels-redis==4.2.0
+daphne==4.1.2
+
+# Storage
+django-storages[boto3]==1.14.4
+boto3==1.35.36
+Pillow==11.0.0
+
+# Payments
+stripe==11.2.0
+razorpay==1.4.2
+
+# Security
+django-cors-headers==4.6.0
+django-ratelimit==4.1.0
+cryptography==43.0.3
+django-csp==3.8
+
+# Monitoring & Docs
+drf-spectacular==0.27.2
+sentry-sdk[django]==2.17.0
+django-health-check==3.18.3
+
+# Utils
+django-environ==0.11.2
+django-model-utils==5.0.0
+django-import-export==4.2.0
+whitenoise==6.8.2
+gunicorn==23.0.0
+uvicorn[standard]==0.32.0

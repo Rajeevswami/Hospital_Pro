@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCore Pro — The Future of Hospital Management</title>
+    <meta name="description" content="AI-powered hospital management SaaS platform trusted by 500+ hospitals worldwide. Streamline patient care, scheduling, billing &amp; analytics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect x="2" y="12" width="28" height="8" rx="2" fill="url(#g1)"/>
+                        <rect x="12" y="2" width="8" height="28" rx="2" fill="url(#g1)"/>
+                        <defs><linearGradient id="g1" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#00b4d8"/><stop offset="1" stop-color="#00ffcc"/></linearGradient></defs>
+                    </svg>
+                </span>
+                <span class="logo-text">Medi<span class="logo-highlight">Core</span> Pro</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-ghost" id="loginBtn">Log In</a>
+                <a href="#" class="btn-primary btn-sm" id="signupBtn">Get Started Free</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-on-scroll">
+                    <span class="badge-dot"></span>
+                    Now with AI-Powered Diagnostics
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    The Future of<br><span class="gradient-text">Hospital Management</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    Streamline operations, enhance patient care, and unlock powerful analytics — all from one intelligent platform trusted by healthcare leaders worldwide.
+                </p>
+                <div class="hero-cta animate-on-scroll">
+                    <a href="#pricing" class="btn-primary btn-lg" id="heroCta">
+                        Get Started Free
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#features" class="btn-outline btn-lg" id="heroLearn">Watch Demo</a>
+                </div>
+                <div class="hero-trust animate-on-scroll">
+                    <div class="trust-avatars">
+                        <div class="avatar" style="background:linear-gradient(135deg,#00b4d8,#7c3aed)">R</div>
+                        <div class="avatar" style="background:linear-gradient(135deg,#00ffcc,#00b4d8)">S</div>
+                        <div class="avatar" style="background:linear-gradient(135deg,#7c3aed,#f472b6)">A</div>
+                        <div class="avatar" style="background:linear-gradient(135deg,#f472b6,#00b4d8)">M</div>
+                    </div>
+                    <span>Trusted by <strong>500+ hospitals</strong> worldwide</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- 3D DNA Helix -->
+                <div class="dna-container animate-on-scroll">
+                    <div class="dna-helix" id="dnaHelix"></div>
+                </div>
+                <!-- Heartbeat Line -->
+                <svg class="heartbeat-line" viewBox="0 0 400 80" preserveAspectRatio="none">
+                    <polyline class="hb-path" points="0,40 60,40 80,40 95,10 110,70 125,40 145,40 200,40 220,40 235,15 250,65 265,40 285,40 400,40" fill="none" stroke="url(#hbGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs><linearGradient id="hbGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00b4d8" stop-opacity="0"/><stop offset="30%" stop-color="#00b4d8"/><stop offset="70%" stop-color="#00ffcc"/><stop offset="100%" stop-color="#00ffcc" stop-opacity="0"/></linearGradient></defs>
+                </svg>
+                <!-- Floating Pills -->
+                <div class="pill pill-1"></div>
+                <div class="pill pill-2"></div>
+                <div class="pill pill-3"></div>
+                <!-- Glowing Orbs -->
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card animate-on-scroll">
+                    <span class="stat-number" data-target="500" data-suffix="+">0</span>
+                    <span class="stat-label">Hospitals</span>
+                    <div class="stat-bar"><div class="stat-bar-fill" style="--w:85%"></div></div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <span class="stat-number" data-target="10000" data-suffix="+" data-display="10K+">0</span>
+                    <span class="stat-label">Doctors</span>
+                    <div class="stat-bar"><div class="stat-bar-fill" style="--w:72%"></div></div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <span class="stat-number" data-target="1000000" data-suffix="+" data-display="1M+">0</span>
+                    <span class="stat-label">Patients Served</span>
+                    <div class="stat-bar"><div class="stat-bar-fill" style="--w:95%"></div></div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <span class="stat-number" data-target="99" data-suffix=".9%">0</span>
+                    <span class="stat-label">Uptime SLA</span>
+                    <div class="stat-bar"><div class="stat-bar-fill" style="--w:99%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything You Need to <span class="gradient-text">Run a Modern Hospital</span></h2>
+                <p class="section-desc">Powerful tools designed for healthcare professionals, built with security and compliance at the core.</p>
+            </div>
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card animate-on-scroll" id="featurePatient">
+                    <div class="feature-icon icon-blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Patient Management</h3>
+                    <p>Complete electronic health records, smart intake forms, and AI-assisted triage for seamless patient journeys.</p>
+                    <a href="#" class="feature-link">Learn more →</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card animate-on-scroll" id="featureScheduling">
+                    <div class="feature-icon icon-cyan">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+                    </div>
+                    <h3>Doctor Scheduling</h3>
+                    <p>Intelligent shift planning, conflict-free appointment booking, and real-time availability updates across departments.</p>
+                    <a href="#" class="feature-link">Learn more →</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card animate-on-scroll" id="featureBilling">
+                    <div class="feature-icon icon-purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><path d="M7 15h2m4 0h4"/></svg>
+                    </div>
+                    <h3>Billing System</h3>
+                    <p>Automated invoicing, insurance claim processing, multi-currency support, and PCI-compliant payment collection.</p>
+                    <a href="#" class="feature-link">Learn more →</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="feature-card animate-on-scroll" id="featureAnalytics">
+                    <div class="feature-icon icon-green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4h-4z"/></svg>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Real-time operational insights, predictive analytics, bed occupancy trends, and customizable KPI reports.</p>
+                    <a href="#" class="feature-link">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Up and Running in <span class="gradient-text">3 Simple Steps</span></h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">01</div>
+                    <h3>Sign Up &amp; Configure</h3>
+                    <p>Create your hospital workspace, invite your team, and customize departments and workflows in minutes.</p>
+                </div>
+                <div class="step-connector animate-on-scroll"></div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">02</div>
+                    <h3>Import &amp; Integrate</h3>
+                    <p>Seamlessly migrate existing records and connect with lab systems, pharmacies, and insurance providers.</p>
+                </div>
+                <div class="step-connector animate-on-scroll"></div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">03</div>
+                    <h3>Go Live &amp; Scale</h3>
+                    <p>Launch operations with real-time dashboards, automated workflows, and 24/7 dedicated support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Plans That <span class="gradient-text">Scale With You</span></h2>
+                <p class="section-desc">Start free. Upgrade when you're ready. No hidden fees, ever.</p>
+            </div>
+            <div class="pricing-toggle animate-on-scroll">
+                <span class="toggle-label active" id="toggleMonthly">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" id="toggleAnnual">Annual <span class="save-badge">Save 20%</span></span>
+            </div>
+            <div class="pricing-grid">
+                <!-- Basic -->
+                <div class="pricing-card animate-on-scroll" id="pricingBasic">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <p class="pricing-desc">For small clinics getting started</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price" data-monthly="49" data-annual="39">49</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Up to 50 patients</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> 5 staff accounts</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Appointment scheduling</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Basic reporting</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Email support</li>
+                    </ul>
+                    <a href="#" class="btn-outline btn-block" id="ctaBasic">Start Free Trial</a>
+                </div>
+                <!-- Pro -->
+                <div class="pricing-card pricing-featured animate-on-scroll" id="pricingPro">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <p class="pricing-desc">For growing hospitals</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price" data-monthly="149" data-annual="119">149</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Unlimited patients</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> 50 staff accounts</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Advanced scheduling</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Billing &amp; invoicing</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Analytics dashboard</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Priority support</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> API access</li>
+                    </ul>
+                    <a href="#" class="btn-primary btn-block" id="ctaPro">Start Free Trial</a>
+                </div>
+                <!-- Enterprise -->
+                <div class="pricing-card animate-on-scroll" id="pricingEnterprise">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p class="pricing-desc">For hospital networks</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency"></span>
+                        <span class="price-custom">Custom</span>
+                        <span class="period"></span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Everything in Pro</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Unlimited staff</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Multi-branch support</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Custom integrations</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Dedicated account manager</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> HIPAA BAA included</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8l3 3 7-7" stroke="#00ffcc" stroke-width="2" fill="none" stroke-linecap="round"/></svg> On-premise option</li>
+                    </ul>
+                    <a href="#" class="btn-outline btn-block" id="ctaEnterprise">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="final-cta" id="contact">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Ready to Transform<br><span class="gradient-text">Your Hospital?</span></h2>
+                <p>Join 500+ healthcare institutions already using MediCore Pro to deliver better patient outcomes.</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn-primary btn-lg" id="finalCta">Get Started Free</a>
+                    <a href="#" class="btn-ghost btn-lg" id="scheduleDemo">Schedule a Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect x="2" y="12" width="28" height="8" rx="2" fill="url(#g2)"/><rect x="12" y="2" width="8" height="28" rx="2" fill="url(#g2)"/><defs><linearGradient id="g2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#00b4d8"/><stop offset="1" stop-color="#00ffcc"/></linearGradient></defs></svg>
+                        </span>
+                        <span class="logo-text">Medi<span class="logo-highlight">Core</span> Pro</span>
+                    </a>
+                    <p>Next-generation hospital management built for the future of healthcare.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul><li><a href="#">Features</a></li><li><a href="#">Pricing</a></li><li><a href="#">Integrations</a></li><li><a href="#">API Docs</a></li></ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul><li><a href="#">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Blog</a></li><li><a href="#">Press</a></li></ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">HIPAA Compliance</a></li><li><a href="#">Security</a></li></ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MediCore Pro. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg></a>
+                    <a href="#" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
